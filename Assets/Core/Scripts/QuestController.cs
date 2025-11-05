@@ -24,8 +24,6 @@ public class QuestController : MonoBehaviour
 
     public void AcceptQuest(Quest quest)
 {
-    // AÑADE ESTA LÍNEA
-    Debug.Log($"Intentando aceptar la misión: '{quest.questName}' con ID: {quest.questID}");
 
     if (IsQuestActive(quest.questID)) return;
     activeQuests.Add(new QuestProgress(quest));
@@ -69,7 +67,7 @@ public class QuestController : MonoBehaviour
     public bool IsQuestCompleted(string questID)
     {
         QuestProgress quest = activeQuests.Find(q => q.QuestId == questID);
-        return quest != null && quest.objectives.TrueForAll(o => o.IsCompleted);
+        return quest != null && quest.quest.objectives.TrueForAll(o => o.IsCompleted);
     }
 
     public void HandInQuest(string questID)

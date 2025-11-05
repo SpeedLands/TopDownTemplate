@@ -45,7 +45,7 @@ public class Item : MonoBehaviour
         cloneItem.updateQuantityDisplay();
         return clone;
     }
-    public virtual void PickUp()
+    public virtual void ShowPopUp()
     {
         Sprite itemIcon = GetComponent<Image>().sprite;
         if (ItemPickupUIController.Instance != null)

@@ -16,11 +16,12 @@ public class MapController_Dynamic : MonoBehaviour
 
     [Header("Map Settings")]
     public GameObject mapBounds;
+    public GameObject homeMapBounds;
     public PolygonCollider2D initialArea;
     public float mapScale = 10f;
 
     private PolygonCollider2D[] mapAreas;
-    private Dictionary<String, RectTransform> uiAreas = new Dictionary<string, RectTransform>();
+    private Dictionary<string, RectTransform> uiAreas = new Dictionary<string, RectTransform>();
     public static MapController_Dynamic Instance { get; set; }
 
     private void Awake()

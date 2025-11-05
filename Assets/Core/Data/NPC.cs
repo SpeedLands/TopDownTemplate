@@ -24,13 +24,11 @@ public class NPC : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        // Esta validación está bien
         if (dialogueData == null || (PauseController.IsGamePaused && !isDialogueActive))
         {
             return;
         }
 
-        // --- LÓGICA CORREGIDA ---
         if (!isDialogueActive)
         {
             // Si no hay un diálogo activo, lo empezamos
@@ -43,7 +41,6 @@ public class NPC : MonoBehaviour, IInteractable
         }
     }
 
-    // CORRECCIÓN: Renombrado de StratDialog a StartDialog
     void StartDialog()
     {
         SyncQuestState();
@@ -74,15 +71,21 @@ public class NPC : MonoBehaviour, IInteractable
         if (dialogueData.quest == null) return;
 
         string questID = dialogueData.quest.questID;
+        // El orden de las comprobaciones es crucial.
 
-        if (QuestController.Instance.IsQuestCompleted(questID) || QuestController.Instance.IsQuestHandedIn(questID))
+        // 1. ¿La misión ya fue ENTREGADA? Si es así, está completada y terminada.
+        if (QuestController.Instance.IsQuestHandedIn(questID))
         {
             questState = QuestState.Completed;
         }
+        // 2. Si no, ¿la misión está ACTIVA? Esto cubre AMBOS casos:
+        //    - El jugador está trabajando en los objetivos.
+        //    - El jugador YA completó los objetivos pero AÚN NO ha entregado la misión.
         else if (QuestController.Instance.IsQuestActive(questID))
         {
             questState = QuestState.InProgress;
         }
+        // 3. Si no cumple ninguna de las anteriores, no ha comenzado.
         else
         {
             questState = QuestState.NotStarted;
@@ -130,8 +133,6 @@ public class NPC : MonoBehaviour, IInteractable
     IEnumerator TypeLine()
     {
         isTyping = true;
-        // MEJORA: Usar StringBuilder para eficiencia
-        StringBuilder stringBuilder = new StringBuilder();
         dialogueUI.SetDialogueText(""); // Limpiar el texto antes de empezar
 
         foreach (char letter in dialogueData.dialogueLines[dialogueIndex])
@@ -181,10 +182,13 @@ public class NPC : MonoBehaviour, IInteractable
 
     public void EndDialogue()
     {
-        if (questState == QuestState.Completed && !QuestController.Instance.IsQuestHandedIn(dialogueData.quest.questID))
+        // Comprobamos si la misión está en progreso Y si sus objetivos están cumplidos.
+        // Esta es la condición perfecta para entregarla.
+        if (questState == QuestState.InProgress && QuestController.Instance.IsQuestCompleted(dialogueData.quest.questID))
         {
             HandleQuestCompletion(dialogueData.quest);
         }
+
         StopAllCoroutines();
         isDialogueActive = false;
         dialogueUI.SetDialogueText("");
@@ -194,6 +198,7 @@ public class NPC : MonoBehaviour, IInteractable
 
     void HandleQuestCompletion(Quest quest)
     {
+        RewardsController.Instance.GiveQuestRewards(quest);
         QuestController.Instance.HandInQuest(quest.questID);
     }
 }

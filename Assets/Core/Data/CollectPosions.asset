@@ -20,9 +20,8 @@ MonoBehaviour:
     description: Recolecta 5 posiones
     type: 0
     requiredAmount: 5
-    currentAmount: 4
-  - objectiveID: 2
-    description: Recolecta 5 posiones
-    type: 0
-    requiredAmount: 5
-    currentAmount: 4
+    currentAmount: 1
+  rewards:
+  - type: 0
+    rewardID: 5
+    amount: 5

@@ -30,9 +30,6 @@ public class InventoryController : MonoBehaviour
         foreach (Transform slotTransform in inventoryPanel.transform)
         {
             Slot slot = slotTransform.GetComponent<Slot>();
-
-            // --- SOLUCIÓN ---
-            // Primero, nos aseguramos de que este objeto sea realmente un slot.
             if (slot != null && slot.currentItem != null)
             {
                 Item item = slot.currentItem.GetComponent<Item>();
@@ -151,7 +148,10 @@ public class InventoryController : MonoBehaviour
             if (amountToRemove <= 0) break;
 
             Slot slot = slotTransform.GetComponent<Slot>();
-            if (slot?.currentItem?.GetComponent<Item>() is Item item && item.ID == itemID)
+            if (slot == null || slot.currentItem == null) continue; // ← validación extra
+
+            Item item = slot.currentItem.GetComponent<Item>();
+            if (item != null && item.ID == itemID)
             {
                 int removed = Mathf.Min(amountToRemove, item.quantity);
                 item.RemoveStack(removed);
@@ -167,4 +167,5 @@ public class InventoryController : MonoBehaviour
 
         RebuildItemCounts();
     }
+
 }

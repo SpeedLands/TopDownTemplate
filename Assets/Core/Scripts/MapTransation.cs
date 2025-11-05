@@ -7,13 +7,15 @@ public class MapTransition : MonoBehaviour
 
     [SerializeField] private CinemachineConfiner2D cameraConfiner;
     [SerializeField] Direction direction;
+    [SerializeField] Transform teleportTargetPosition;
     [SerializeField] float additivePosition = 2f;
     enum Direction
     {
         Up,
         Down,
         Left,
-        Right
+        Right,
+        Teleport
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -37,6 +39,11 @@ public class MapTransition : MonoBehaviour
 
     private void UpdatePlayerPosition(GameObject player)
     {
+        if (direction == Direction.Teleport)
+        {
+            player.transform.position = teleportTargetPosition.position;
+            return;
+        }
         Vector3 newPosition = player.transform.position;
         switch (direction)
         {
