@@ -77,6 +77,12 @@ public class RobotController : MonoBehaviour
     // --- FUNCIÓN VISUAL ACTUALIZADA ---
     private void UpdateRobotVisuals()
     {
+        if (robotImage == null)
+        {
+            Debug.LogError("RobotController: El componente 'Image' no se encontró en el prefab del robot. Asegúrate de que el prefab tenga un componente 'Image'.", gameObject);
+            return; // Salir para evitar más errores.
+        }
+
         // 1. Cambiar el sprite manualmente según la dirección actual
         switch (currentDirection)
         {
