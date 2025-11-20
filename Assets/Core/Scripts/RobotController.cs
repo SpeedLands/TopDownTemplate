@@ -18,18 +18,20 @@ public class RobotController : MonoBehaviour
 
     private LevelData currentLevelData;
     private Image robotImage;
+    private Transform puzzleArea; // Referencia robusta al contenedor de tiles
 
     void Awake()
     {
         robotImage = GetComponent<Image>();
     }
 
-    public void Setup(LevelData levelData, int startX, int startY)
+    public void Setup(LevelData levelData, int startX, int startY, Transform puzzleArea)
     {
         this.currentLevelData = levelData;
         this.currentX = startX;
         this.currentY = startY;
         this.currentDirection = Direction.Down; // Siempre empieza mirando hacia arriba
+        this.puzzleArea = puzzleArea; // Asignamos la referencia
 
         UpdateRobotVisuals(); // Actualiza la posición y el sprite inicial
     }
@@ -86,7 +88,6 @@ public class RobotController : MonoBehaviour
 
         // 2. Mover el objeto al tile correcto (esta lógica no cambia)
         int newTileIndex = currentY * currentLevelData.Width + currentX;
-        Transform puzzleArea = transform.parent.parent;
         Transform newParentTile = puzzleArea.GetChild(newTileIndex);
 
         if (transform.parent != newParentTile)

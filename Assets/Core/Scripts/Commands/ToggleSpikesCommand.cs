@@ -6,9 +6,9 @@ public class ToggleSpikesCommand : Command
     // The signature 'public override void Execute(RobotController robot)' must match exactly.
     public override void Execute(RobotController robot)
     {
-        // Placeholder for the logic to toggle spike traps.
-        // This might involve finding specific spike objects in the scene
-        // or calling a method on a SpikeManager.
+        // TODO: Implement interaction with SpikeController
+        // This will require a way to find the relevant SpikeController instance.
+        // For now, we'll just log that the command was executed.
         UnityEngine.Debug.Log("Executing: Toggle Spikes");
     }
 }

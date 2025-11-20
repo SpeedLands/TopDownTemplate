@@ -74,10 +74,19 @@ public class PuzzleManager : MonoBehaviour
     private IEnumerator ProcessSequence(List<Command> commands)
     {
         CurrentState = PuzzleState.Executing;
+        RobotController robot = gridGenerator.Robot; // Obtenemos la referencia al robot
+
+        if (robot == null)
+        {
+            Debug.LogError("No se encontró el RobotController para ejecutar los comandos.");
+            CurrentState = PuzzleState.Playing; // Volvemos al estado anterior
+            yield break; // Salimos de la corutina
+        }
+
         foreach (var command in commands)
         {
-            Debug.Log("Ejecutando comando: " + command.GetType().Name);
-            yield return new WaitForSeconds(0.5f);
+            command.Execute(robot); // Ejecutamos el comando en el robot
+            yield return new WaitForSeconds(0.5f); // Espera para visualización
         }
 
         bool puzzleIsSolved = CheckWinCondition();
@@ -96,6 +105,13 @@ public class PuzzleManager : MonoBehaviour
 
     private bool CheckWinCondition()
     {
-        return executionCount == 1;
+        RobotController robot = gridGenerator.Robot;
+        if (robot == null) return false;
+
+        // La condición de victoria es que el robot esté en la casilla 'Goal'
+        int robotX = robot.currentX;
+        int robotY = robot.currentY;
+
+        return currentLevelData.rows[robotY].columns[robotX] == TileType.Goal;
     }
 }
