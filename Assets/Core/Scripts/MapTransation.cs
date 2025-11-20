@@ -28,13 +28,26 @@ public class MapTransition : MonoBehaviour
 
         if (collision.CompareTag("Player"))
         {
-            cameraConfiner.BoundingShape2D = newMapBoundary;
+            FadeTransition(collision.gameObject);
+            // cameraConfiner.BoundingShape2D = newMapBoundary;
             UpdatePlayerPosition(collision.gameObject);
             MapController_Manual.Instance?.HighLightArea(newMapBoundary.name);
             MapController_Dynamic.Instance?.UpdateCurrentArea(newMapBoundary.name);
 
             cameraConfiner.InvalidateBoundingShapeCache();
         }
+    }
+
+    async void FadeTransition(GameObject player)
+    {
+        PauseController.SetPause(true);
+        await ScreenFade.Instance.FadeOut();
+
+        cameraConfiner.BoundingShape2D = newMapBoundary;
+        UpdatePlayerPosition(player);
+
+        await ScreenFade.Instance.FadeIn();
+        PauseController.SetPause(false);
     }
 
     private void UpdatePlayerPosition(GameObject player)
