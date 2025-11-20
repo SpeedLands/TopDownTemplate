@@ -10,21 +10,25 @@ public class PuzzleUIController : MonoBehaviour
     [Header("UI Panels & Areas")]
     [SerializeField] private GameObject puzzleScreen;
     [SerializeField] private Transform commandPalette;
-    [SerializeField] private Transform executionArea; // The DropZone
+    [SerializeField] private Transform executionArea;
     [SerializeField] private Button executeButton;
+    [SerializeField] private Button closeButton; // Botón para cerrar
 
     void Awake()
     {
-        if (Instance != null && Instance != this)
-        {
-            Destroy(gameObject);
-        }
-        else
-        {
-            Instance = this;
-        }
+        if (Instance != null && Instance != this) Destroy(gameObject);
+        else Instance = this;
 
         executeButton.onClick.AddListener(OnExecuteButtonPressed);
+        // --- LÓGICA AÑADIDA ---
+        closeButton.onClick.AddListener(OnCloseButtonPressed);
+    }
+
+    // --- NUEVO MÉTODO ---
+    private void OnCloseButtonPressed()
+    {
+        // El PuzzleManager se encarga de la lógica de descarga.
+        PuzzleManager.Instance.UnloadPuzzle();
     }
 
     public void ShowPuzzleScreen(bool show, LevelData levelData = null)
@@ -41,35 +45,25 @@ public class PuzzleUIController : MonoBehaviour
         }
     }
 
-    // --- Palette Management ---
     private void PopulateCommandPalette(List<GameObject> allowedCommands)
     {
         ClearCommandPalette();
         foreach (GameObject commandPrefab in allowedCommands)
         {
-            // Instantiate the UI prefab and make it a child of the palette.
-            // Note: This assumes the prefab has a CommandSpawner component on it.
             Instantiate(commandPrefab, commandPalette);
         }
     }
 
     private void ClearCommandPalette()
     {
-        foreach (Transform child in commandPalette)
-        {
-            Destroy(child.gameObject);
-        }
+        foreach (Transform child in commandPalette) Destroy(child.gameObject);
     }
 
     private void ClearExecutionArea()
     {
-        foreach (Transform child in executionArea)
-        {
-            Destroy(child.gameObject);
-        }
+        foreach (Transform child in executionArea) Destroy(child.gameObject);
     }
 
-    // --- Button Handler ---
     public void OnExecuteButtonPressed()
     {
         List<Command> commandSequence = new List<Command>();
@@ -78,12 +72,8 @@ public class PuzzleUIController : MonoBehaviour
             CommandUIMetadata metadata = child.GetComponent<CommandUIMetadata>();
             if (metadata != null)
             {
-                // Convert the UI metadata into an actual command logic object
                 Command command = CreateCommandFromType(metadata.commandType);
-                if (command != null)
-                {
-                    commandSequence.Add(command);
-                }
+                if (command != null) commandSequence.Add(command);
             }
         }
 
@@ -93,28 +83,22 @@ public class PuzzleUIController : MonoBehaviour
         }
     }
 
-    // --- Command Factory ---
     private Command CreateCommandFromType(CommandType type)
     {
         switch (type)
         {
-            // --- Placeholder cases ---
-            // These will be replaced with actual command classes in the next step.
             case CommandType.MoveForward: return new MoveForwardCommand();
             case CommandType.TurnRight:   return new TurnRightCommand();
             case CommandType.TurnLeft:    return new TurnLeftCommand();
             case CommandType.ToggleSpikes: return new ToggleSpikesCommand();
-            default:
-                Debug.LogWarning("Unknown command type: " + type);
-                return null;
+            default: return null;
         }
     }
 
-
-    // --- Drag & Drop Logic (consolidated) ---
+    // --- El resto de la lógica de arrastrar y soltar no cambia ---
     public void HandleBeginDrag(DraggableCommandUI command)
     {
-        command.transform.SetParent(transform.root); // Detach from parent
+        command.transform.SetParent(transform.root);
         command.GetCanvasGroup().blocksRaycasts = false;
         command.GetCanvasGroup().alpha = 0.6f;
     }
@@ -143,14 +127,8 @@ public class PuzzleUIController : MonoBehaviour
             }
         }
 
-        if (command.IsSpawned())
-        {
-            Destroy(command.gameObject);
-        }
-        else
-        {
-            command.ReturnToOriginalParent();
-        }
+        if (command.IsSpawned()) Destroy(command.gameObject);
+        else command.ReturnToOriginalParent();
     }
 
     public void SpawnCommandForDragging(GameObject commandPrefab, PointerEventData eventData)

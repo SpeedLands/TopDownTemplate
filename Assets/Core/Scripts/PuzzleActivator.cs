@@ -1,61 +1,27 @@
 using UnityEngine;
 
-// This component is attached to objects in the game world (e.g., a terminal, a pedestal).
-// It triggers the puzzle UI when the player interacts with it.
-public class PuzzleActivator : MonoBehaviour, IInteractable // Assuming an IInteractable interface exists
+// Este componente solo necesita una referencia al LevelData.
+// Su única tarea es activar el puzzle a través del PuzzleManager.
+public class PuzzleActivator : MonoBehaviour, IInteractable
 {
-    [Header("Puzzle Configuration")]
     [SerializeField] private LevelData puzzleToLoad;
-
-    // --- IInteractable Implementation ---
 
     public bool CanInteract()
     {
-        // Prevent interaction if the puzzle is already active or the game is paused.
-        return PuzzleManager.Instance.CurrentState == PuzzleManager.PuzzleState.Inactive
-               && !PauseController.IsGamePaused; // Assuming a PauseController exists
+        // Solo se puede interactuar si no hay otro puzzle activo.
+        return PuzzleManager.Instance.CurrentState == PuzzleManager.PuzzleState.Inactive;
     }
 
     public void Interact()
     {
-        if (CanInteract())
+        if (CanInteract() && puzzleToLoad != null)
         {
-            ActivatePuzzle();
+            // Llama al singleton PuzzleManager para que se encargue de todo.
+            PuzzleManager.Instance.LoadPuzzle(puzzleToLoad);
         }
-    }
-
-    // --- Activation Logic ---
-
-    private void ActivatePuzzle()
-    {
-        if (puzzleToLoad == null)
+        else
         {
-            Debug.LogError("No LevelData assigned to this PuzzleActivator!", this);
-            return;
+            Debug.LogWarning("No se puede interactuar o no hay un LevelData asignado.", this);
         }
-
-        // Load the puzzle data into the manager
-        PuzzleManager.Instance.LoadPuzzle(puzzleToLoad);
-
-        // Show the puzzle UI screen
-        PuzzleUIController.Instance.ShowPuzzleScreen(true, puzzleToLoad);
-
-        // You might also want to pause the game world or disable player movement here
-        PauseController.SetPause(true); // Example
-    }
-
-    // This could be called from a "Close" button on the puzzle UI
-    public void DeactivatePuzzle()
-    {
-         PuzzleManager.Instance.UnloadPuzzle();
-         PuzzleUIController.Instance.ShowPuzzleScreen(false);
-         PauseController.SetPause(false); // Example
     }
 }
-
-// NOTE: You will need a corresponding IInteractable interface for this to compile.
-// public interface IInteractable
-// {
-//     bool CanInteract();
-//     void Interact();
-// }
