@@ -11,6 +11,13 @@ public class BattleUIManager : MonoBehaviour
     [SerializeField] private Button commandListButton; // Tu "ComandButton"
     [SerializeField] private Button executeButton; // Tu "ExecuteButton"
 
+    [Header("Nuevos Elementos UI")]
+    [Tooltip("La barra de slider que representa el límite de tiempo.")]
+    [SerializeField] private Slider timeLimitSlider;
+    [Tooltip("El panel GameObject que contiene el texto de la consola.")]
+    [SerializeField] private GameObject consolePanel;
+    private Animator enemyAnimator; // Referencia al animator del enemigo en la UI
+
     [Header("Contenedor de Información (InfoContainer)")]
     [SerializeField] private TMP_Text playerNameText; // El primer Text (TMP) en InfoContainer
     [SerializeField] private TMP_Text playerLevelText; // El segundo Text (TMP) en InfoContainer
@@ -24,6 +31,15 @@ public class BattleUIManager : MonoBehaviour
 
     [Header("Consola de Depuración")]
     [SerializeField] private TMP_Text consoleText; // El texto de la consola (ver nota abajo)
+
+    void Awake()
+    {
+        // --- NUEVO: Obtener la referencia al Animator del enemigo de la UI ---
+        if (enemyImage != null)
+        {
+            enemyAnimator = enemyImage.GetComponent<Animator>();
+        }
+    }
 
     void Start()
     {
@@ -86,5 +102,46 @@ public class BattleUIManager : MonoBehaviour
     {
         if (playerNameText != null) playerNameText.text = playerName;
         if (playerLevelText != null) playerLevelText.text = "LV. " + level;
+    }
+
+    // --- NUEVOS MÉTODOS PÚBLICOS ---
+
+    /// <summary>
+    /// Actualiza el valor de la barra de tiempo.
+    /// </summary>
+    /// <param name="value">Valor normalizado entre 0 y 1.</param>
+    public void UpdateTimer(float value)
+    {
+        if (timeLimitSlider != null)
+        {
+            timeLimitSlider.value = value;
+        }
+    }
+
+    /// <summary>
+    /// Muestra u oculta el panel de la consola.
+    /// </summary>
+    public void ShowConsole(bool show)
+    {
+        if (consolePanel != null)
+        {
+            consolePanel.SetActive(show);
+        }
+    }
+
+    /// <summary>
+    /// Dispara una animación en el Animator del enemigo.
+    /// </summary>
+    /// <param name="triggerName">El nombre del trigger a activar (ej. "TakeDamage").</param>
+    public void TriggerEnemyAnimation(string triggerName)
+    {
+        if (enemyAnimator != null)
+        {
+            enemyAnimator.SetTrigger(triggerName);
+        }
+        else
+        {
+            Debug.LogWarning("Enemy Animator no encontrado en la UI.");
+        }
     }
 }

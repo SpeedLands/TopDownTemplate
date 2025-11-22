@@ -23,8 +23,11 @@ public class BattleManager : MonoBehaviour
     [SerializeField] private List<Comand> playerKnownCommands;
     [Tooltip("El número máximo de errores antes de perder la batalla.")]
     [SerializeField] private int maxErrors = 3;
+    [Tooltip("La duración en segundos del turno del jugador.")]
+    [SerializeField] private float playerTurnDuration = 15f;
 
     // --- Estado Interno de la Batalla ---
+    private Coroutine playerTurnTimerCoroutine; // NUEVO: Para controlar el timer
     private Enemy currentEnemy;
     private EnemyStats currentEnemyStats; // NUEVO: Referencia a las estadísticas del enemigo
     private PlayerBattleStats battlePlayerStats; // NUEVO: Estadísticas temporales para la batalla
@@ -75,6 +78,7 @@ public class BattleManager : MonoBehaviour
         // 1. Configurar la UI y el estado del mundo
         uiManager.ShowBattleUI(true);
         uiManager.UpdateEnemySprite(enemy.GetComponent<SpriteRenderer>().sprite);
+        uiManager.TriggerEnemyAnimation("StartBattle"); // Dispara la animación de inicio
         player.GetComponent<PlayerMovement>().enabled = false; // Desactivamos el movimiento del jugador
 
         // --- CAMBIO CLAVE PARA EVITAR FREEZING ---
@@ -112,6 +116,12 @@ public class BattleManager : MonoBehaviour
     public void ProcessPlayerCommands(string rawInput)
     {
         if (state != BattleState.PlayerTurn) return; // Solo procesamos si es el turno del jugador
+
+        if (playerTurnTimerCoroutine != null)
+        {
+            StopCoroutine(playerTurnTimerCoroutine);
+            playerTurnTimerCoroutine = null;
+        }
 
         state = BattleState.Processing;
         usedCommandsThisTurn.Clear();
@@ -223,6 +233,7 @@ public class BattleManager : MonoBehaviour
                 // --- MODIFICADO: Usar el daño del jugador + el poder del comando ---
                 int totalDamage = battlePlayerStats.baseDamage + command.power;
                 Debug.Log($"Jugador ataca con poder total {totalDamage} ({battlePlayerStats.baseDamage} base + {command.power} del comando).");
+                uiManager.TriggerEnemyAnimation("TakeDamage");
                 currentEnemyStats.TakeDamage(totalDamage);
                 break;
             case "curar":
@@ -273,6 +284,7 @@ public class BattleManager : MonoBehaviour
     private IEnumerator EnemyTurn()
     {
         state = BattleState.EnemyTurn;
+        uiManager.ShowConsole(true);
         uiManager.LogToConsole("Turno del enemigo...");
         yield return new WaitForSeconds(1.5f);
 
@@ -281,6 +293,7 @@ public class BattleManager : MonoBehaviour
         {
             // El enemigo estaba cargando, ¡ahora ataca!
             uiManager.LogToConsole($"¡{currentEnemy.name} desata su {currentEnemyStats.chargedAction.actionName}!");
+            uiManager.TriggerEnemyAnimation("Attack");
             player.TakeDamage(currentEnemyStats.chargedAction.power);
             currentEnemyStats.isChargingSpecial = false;
         }
@@ -294,6 +307,7 @@ public class BattleManager : MonoBehaviour
                 {
                     case EnemyAction.ActionType.Attack:
                         uiManager.LogToConsole($"¡{currentEnemy.name} usa {action.actionName}!");
+                        uiManager.TriggerEnemyAnimation("Attack");
                         player.TakeDamage(action.power);
                         break;
                     case EnemyAction.ActionType.Heal:
@@ -321,8 +335,7 @@ public class BattleManager : MonoBehaviour
         }
         else
         {
-            state = BattleState.PlayerTurn;
-            uiManager.LogToConsole("Tu turno. Escribe tus comandos.");
+            StartCoroutine(StartPlayerTurn());
         }
     }
 
@@ -350,6 +363,34 @@ public class BattleManager : MonoBehaviour
         }
         // Como fallback, si algo sale mal con las probabilidades, devuelve la primera acción
         return currentEnemyStats.actions[0];
+    }
+
+    // --- NUEVAS CORRUTINAS PARA EL TIMER ---
+
+    private IEnumerator StartPlayerTurn()
+    {
+        state = BattleState.PlayerTurn;
+        uiManager.LogToConsole("Tu turno. Escribe tus comandos.");
+        uiManager.ShowConsole(false);
+
+        playerTurnTimerCoroutine = StartCoroutine(PlayerTurnTimerRoutine());
+        yield return null;
+    }
+
+    private IEnumerator PlayerTurnTimerRoutine()
+    {
+        float timer = playerTurnDuration;
+        while (timer > 0)
+        {
+            timer -= Time.deltaTime;
+            uiManager.UpdateTimer(timer / playerTurnDuration);
+            yield return null;
+        }
+
+        uiManager.LogToConsole("¡Tiempo agotado! Has perdido tu turno.");
+        uiManager.ShowConsole(true);
+        yield return new WaitForSeconds(1.5f);
+        StartCoroutine(EndPlayerTurn());
     }
 
     /// <summary>
@@ -404,8 +445,10 @@ public class BattleManager : MonoBehaviour
         {
             uiManager.LogToConsole("Has sido derrotado...");
             // Lógica de Game Over, recargar checkpoint, etc.
-            // Por ahora, solo reactivamos al enemigo para poder intentarlo de nuevo.
-            currentEnemy.gameObject.SetActive(true);
+            // --- CORRECCIÓN: Reactivar los componentes del enemigo ---
+            currentEnemy.GetComponent<Collider2D>().enabled = true;
+            currentEnemy.GetComponent<Rigidbody2D>().simulated = true;
+            currentEnemy.GetComponent<SpriteRenderer>().enabled = true;
         }
 
         // --- NUEVO: Restaurar la vida de la UI ---
