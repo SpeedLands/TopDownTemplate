@@ -2,10 +2,10 @@ using UnityEngine;
 
 // Esto te permite crear nuevos comandos desde el menú de Assets en Unity.
 [CreateAssetMenu(fileName = "Nuevo Comando", menuName = "Batalla/Comando")]
-public class Command : ScriptableObject
+public class Comand : ScriptableObject
 {
     [Header("Información Básica")]
-    public string commandKeyword; // La palabra que el jugador debe escribir (ej: "atacar", "reparar")
+    public string comandKeyword; // La palabra que el jugador debe escribir (ej: "atacar", "reparar")
     [TextArea] public string description; // La descripción que se muestra en la lista de comandos.
     public Sprite icon;
 

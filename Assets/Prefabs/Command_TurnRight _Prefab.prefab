@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 1825212350262668891}
   - component: {fileID: 5709418150121946633}
   - component: {fileID: 8243434765457675551}
-  - component: {fileID: 5544516676224558315}
-  - component: {fileID: 199594013949693969}
+  - component: {fileID: 7375157040236939215}
+  - component: {fileID: 7732946669145752042}
+  - component: {fileID: -6526928620962061686}
   m_Layer: 5
   m_Name: Command_TurnRight _Prefab
   m_TagString: Untagged
@@ -123,7 +124,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &5544516676224558315
+--- !u!114 &7375157040236939215
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -132,11 +133,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 3871938406355558925}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b0bb7eb9a5008d478da3be913d0dbf5, type: 3}
+  m_Script: {fileID: 11500000, guid: d4dfc05039da5474fbdc302e033807dd, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CommandBlock
+  m_EditorClassIdentifier: Assembly-CSharp::CommandUIMetadata
   commandType: 1
---- !u!114 &199594013949693969
+--- !u!225 &7732946669145752042
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3871938406355558925}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &-6526928620962061686
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -145,9 +158,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 3871938406355558925}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52439018f6fdc3846ab4d836cb931b44, type: 3}
+  m_Script: {fileID: 11500000, guid: e40c5252a8fec9e49acd99c437a2735b, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DraggableCommand
+  m_EditorClassIdentifier: Assembly-CSharp::DraggableCommandUI
 --- !u!1 &4555862193032534867
 GameObject:
   m_ObjectHideFlags: 0

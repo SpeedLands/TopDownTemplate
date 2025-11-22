@@ -31,16 +31,16 @@ public class PlayerMovement : MonoBehaviour
     // Update es para lógica visual y no física
     void Update()
     {
-        if (PauseController.IsGamePaused)
-        {
-            if (rb.linearVelocity != Vector2.zero)
-            {
-                rb.linearVelocity = Vector2.zero;
-                animator.SetFloat("LastInputX", lastMoveDirection.x);
-                animator.SetFloat("LastInputY", lastMoveDirection.y);
-            }
-            return;
-        }
+        // if (PauseController.IsGamePaused)
+        // {
+        //     if (rb.linearVelocity != Vector2.zero)
+        //     {
+        //         rb.linearVelocity = Vector2.zero;
+        //         animator.SetFloat("LastInputX", lastMoveDirection.x);
+        //         animator.SetFloat("LastInputY", lastMoveDirection.y);
+        //     }
+        //     return;
+        // }
         UpdateAnimator();
     }
 

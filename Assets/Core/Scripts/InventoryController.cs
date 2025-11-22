@@ -22,6 +22,8 @@ public class InventoryController : MonoBehaviour
         }
         Instance = this;
 
+        itemDictionary = FindAnyObjectByType<ItemDictionary>();
+
     }
 
     public void RebuildItemCounts()
@@ -45,7 +47,6 @@ public class InventoryController : MonoBehaviour
     public Dictionary<int, int> GetItemCounts() => itemCountChache;
     void Start()
     {
-        itemDictionary = FindAnyObjectByType<ItemDictionary>();
         RebuildItemCounts();
     }
 
@@ -108,9 +109,21 @@ public class InventoryController : MonoBehaviour
 
     public void SetInventoryItems(List<InventorySaveData> inventorySaveData)
     {
-        foreach (Transform child in inventoryPanel.transform)
+        if (inventorySaveData == null)
         {
-            Destroy(child.gameObject);
+            Debug.LogWarning("InventorySaveData era nulo. Se omitió la carga del inventario.");
+            return;
+        }
+
+        // CORRECCIÓN 2: Seguridad extra por si Awake falló o el orden de ejecución fue raro.
+        if (itemDictionary == null)
+        {
+            itemDictionary = FindAnyObjectByType<ItemDictionary>();
+        }
+
+        for (int i = inventoryPanel.transform.childCount - 1; i >= 0; i--)
+        {
+            DestroyImmediate(inventoryPanel.transform.GetChild(i).gameObject);
         }
 
         for (int i = 0; i < slotCount; i++)
@@ -120,22 +133,30 @@ public class InventoryController : MonoBehaviour
 
         foreach (InventorySaveData data in inventorySaveData)
         {
-            if (data.slotIndex < slotCount)
+            if (data.slotIndex < inventoryPanel.transform.childCount)
             {
                 Slot slot = inventoryPanel.transform.GetChild(data.slotIndex).GetComponent<Slot>();
-                GameObject itemPrefab = itemDictionary.GetItemPrefab(data.itemID);
-                if (itemPrefab != null)
+                if (slot != null)
                 {
-                    GameObject item = Instantiate(itemPrefab, slot.transform);
-                    item.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
-                    Item itemComponent = item.GetComponent<Item>();
-                    if (itemComponent != null && data.quantity > 1)
+                    GameObject itemPrefab = itemDictionary.GetItemPrefab(data.itemID);
+                    if (itemPrefab != null)
                     {
-                        itemComponent.quantity = data.quantity;
-                        itemComponent.updateQuantityDisplay();
+                        GameObject item = Instantiate(itemPrefab, slot.transform);
+                        item.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
+                        Item itemComponent = item.GetComponent<Item>();
+                        if (itemComponent != null && data.quantity > 1)
+                        {
+                            itemComponent.quantity = data.quantity;
+                            itemComponent.updateQuantityDisplay();
+                        }
+                        slot.currentItem = item;
                     }
-                    slot.currentItem = item;
                 }
+                else
+                {
+                    Debug.LogWarning($"El objeto en el índice {data.slotIndex} no tiene el componente 'Slot'.");
+                }
+                
             }
         }
         RebuildItemCounts();

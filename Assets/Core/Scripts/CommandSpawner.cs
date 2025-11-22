@@ -1,19 +1,22 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
+// This component sits on the command buttons in the palette.
+// When clicked, it tells the PuzzleUIController to spawn a new command for dragging.
 public class CommandSpawner : MonoBehaviour, IPointerDownHandler
 {
-    // Arrastra aquí el PREFAB REAL del comando que quieres generar
-    // (el que tiene DraggableCommand.cs y CommandBlock.cs)
+    [Tooltip("The command UI prefab to be spawned.")]
     public GameObject commandPrefab;
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        // 1. Crear una nueva instancia del prefab del comando
-        GameObject newCommandInstance = Instantiate(commandPrefab, transform.root);
+        if (commandPrefab == null)
+        {
+            Debug.LogError("Command Prefab is not set on this spawner!", this);
+            return;
+        }
 
-        // 2. Forzar el inicio del arrastre en la nueva instancia
-        // Le pasamos el control del evento del ratón al nuevo objeto
-        eventData.pointerDrag = newCommandInstance;
+        // Delegate the spawning and drag initiation to the central controller.
+        PuzzleUIController.Instance.SpawnCommandForDragging(commandPrefab, eventData);
     }
 }

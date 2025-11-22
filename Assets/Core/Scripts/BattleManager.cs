@@ -18,13 +18,13 @@ public class BattleManager : MonoBehaviour
 
     [Header("Configuración de Batalla")]
     [Tooltip("La lista de todos los comandos que el jugador ha desbloqueado.")]
-    [SerializeField] private List<Command> playerKnownCommands;
+    [SerializeField] private List<Comand> playerKnownCommands;
     [Tooltip("El número máximo de errores antes de perder la batalla.")]
     [SerializeField] private int maxErrors = 3;
 
     // --- Estado Interno de la Batalla ---
     private Enemy currentEnemy;
-    private List<Command> usedCommandsThisTurn;
+    private List<Comand> usedCommandsThisTurn;
     private int errorCount;
 
     // El State Machine que controla el flujo de la batalla
@@ -59,12 +59,12 @@ public class BattleManager : MonoBehaviour
 
         // 2. Inicializar el estado de la batalla
         errorCount = 0;
-        usedCommandsThisTurn = new List<Command>();
+        usedCommandsThisTurn = new List<Comand>();
         uiManager.UpdateErrorCount(errorCount);
         // Reseteamos el estado de los comandos (por si estaban rotos de una batalla anterior)
-        foreach (var command in playerKnownCommands)
+        foreach (var comand in playerKnownCommands)
         {
-            command.Reset();
+            comand.Reset();
         }
 
         // 3. Iniciar el primer turno
@@ -107,7 +107,7 @@ public class BattleManager : MonoBehaviour
         // 3. Procesamos cada comando
         foreach (string input in commandInputs)
         {
-            Command commandToExecute = playerKnownCommands.Find(c => c.commandKeyword.ToLower() == input);
+            Comand commandToExecute = playerKnownCommands.Find(c => c.comandKeyword.ToLower() == input);
 
             // --- Aplicamos las Reglas ---
             if (commandToExecute == null) // Regla #6: Comando no existe
@@ -136,10 +136,10 @@ public class BattleManager : MonoBehaviour
         StartCoroutine(EndPlayerTurn());
     }
 
-    private void ExecuteCommandEffect(Command command)
+    private void ExecuteCommandEffect(Comand command)
     {
         // Aquí es donde la acción del comando tiene lugar
-        switch (command.commandKeyword.ToLower())
+        switch (command.comandKeyword.ToLower())
         {
             case "atacar":
                 // Lógica para dañar al enemigo

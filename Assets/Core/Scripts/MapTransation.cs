@@ -35,19 +35,20 @@ public class MapTransition : MonoBehaviour
             MapController_Dynamic.Instance?.UpdateCurrentArea(newMapBoundary.name);
 
             cameraConfiner.InvalidateBoundingShapeCache();
+
         }
     }
 
     async void FadeTransition(GameObject player)
     {
-        PauseController.SetPause(true);
+        // PauseController.SetPause(true);
         await ScreenFade.Instance.FadeOut();
 
         cameraConfiner.BoundingShape2D = newMapBoundary;
         UpdatePlayerPosition(player);
 
         await ScreenFade.Instance.FadeIn();
-        PauseController.SetPause(false);
+        // PauseController.SetPause(false);
     }
 
     private void UpdatePlayerPosition(GameObject player)

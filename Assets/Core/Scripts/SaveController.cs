@@ -1,3 +1,4 @@
+using System.Collections; 
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -6,15 +7,44 @@ using UnityEngine;
 
 public class SaveController : MonoBehaviour
 {
+    [Header("UI Transiciones")]
+    public CanvasGroup transitionGroup;
+    public float fadeDuration = 1.0f;
     private string saveLocation;
     private InventoryController inventoryController;
     private HotBarController hotBarController;
     private Chest[] chests;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    IEnumerator Start()
     {
+        if (transitionGroup != null)
+        {
+            transitionGroup.alpha = 1f; // Opacidad al máximo
+            transitionGroup.blocksRaycasts = true; // Bloquear clicks del mouse
+        }
+
+        yield return null; 
+
+        yield return new WaitForSeconds(0.5f);
+
         InitializeComponents();
         LoadGame();
+
+        if (transitionGroup != null)
+        {
+            float timer = 0f;
+            while (timer < fadeDuration)
+            {
+                timer += Time.deltaTime;
+                // Va bajando el alpha de 1 a 0 poco a poco
+                transitionGroup.alpha = Mathf.Lerp(1f, 0f, timer / fadeDuration);
+                yield return null;
+            }
+
+            // Aseguramos que quede invisible y desbloqueamos el mouse
+            transitionGroup.alpha = 0f;
+            transitionGroup.blocksRaycasts = false;
+        }
     }
 
     public void InitializeComponents()

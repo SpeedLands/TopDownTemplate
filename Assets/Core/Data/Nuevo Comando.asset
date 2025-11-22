@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 195c2b6bd385a634ba4168f69106f48b, type: 3}
   m_Name: Nuevo Comando
   m_EditorClassIdentifier: Assembly-CSharp::Command
-  commandKeyword: 
+  comandKeyword: 
   description: 
   icon: {fileID: 0}
   isBroken: 0

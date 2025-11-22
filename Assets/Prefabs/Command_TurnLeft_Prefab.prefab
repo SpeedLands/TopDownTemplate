@@ -148,8 +148,9 @@ GameObject:
   - component: {fileID: 1483342062330430294}
   - component: {fileID: 5957002711949009730}
   - component: {fileID: 1184980645875353525}
-  - component: {fileID: 8181684343151496079}
-  - component: {fileID: 6938812223684744441}
+  - component: {fileID: 5048388083469233512}
+  - component: {fileID: -8312915817231217880}
+  - component: {fileID: -704896675360166075}
   m_Layer: 5
   m_Name: Command_TurnLeft_Prefab
   m_TagString: Untagged
@@ -259,7 +260,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &8181684343151496079
+--- !u!225 &5048388083469233512
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8325980773411064816}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &-8312915817231217880
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -268,19 +281,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 8325980773411064816}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b0bb7eb9a5008d478da3be913d0dbf5, type: 3}
+  m_Script: {fileID: 11500000, guid: e40c5252a8fec9e49acd99c437a2735b, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CommandBlock
+  m_EditorClassIdentifier: Assembly-CSharp::DraggableCommandUI
+--- !u!114 &-704896675360166075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8325980773411064816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4dfc05039da5474fbdc302e033807dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CommandUIMetadata
   commandType: 2
---- !u!114 &6938812223684744441
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8325980773411064816}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52439018f6fdc3846ab4d836cb931b44, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DraggableCommand

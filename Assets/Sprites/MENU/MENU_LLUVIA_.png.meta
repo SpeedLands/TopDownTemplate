@@ -1,0 +1,2527 @@
+fileFormatVersion: 2
+guid: 8659fa82a2e0f1949ba5c561022865bb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2705880905926536484
+    second: MENU_LLUVIA__0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 698
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MENU_LLUVIA__0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 13960
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd29cb507a7c27ad0800000000000000
+      internalID: -2705880905926536484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__1
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 13960
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09d4abf5035ca164a8f8dbea61dcd685
+      internalID: -616602764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__2
+      rect:
+        serializedVersion: 2
+        x: 2540
+        y: 13960
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b383a43f5bea79468e9efbdd7e493c4
+      internalID: 158476612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__3
+      rect:
+        serializedVersion: 2
+        x: 3810
+        y: 13960
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6241692a8dd123744a8a1bcb6a8b8ea8
+      internalID: -1021506828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__4
+      rect:
+        serializedVersion: 2
+        x: 5080
+        y: 13960
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b36f64abb5c9dc249bc433309016c717
+      internalID: 2013981696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 13262
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49351b406016af24690d801405f3f85c
+      internalID: -1985518644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__6
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 13262
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59c9afb3acb7fcf49936661d60adbd51
+      internalID: -1889748152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__7
+      rect:
+        serializedVersion: 2
+        x: 2540
+        y: 13262
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eb7571f870cab54bb4cb51cf08a5c53
+      internalID: -1020146235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__8
+      rect:
+        serializedVersion: 2
+        x: 3810
+        y: 13262
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8423576674e399459e960f2c5f091a0
+      internalID: 94762337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__9
+      rect:
+        serializedVersion: 2
+        x: 5080
+        y: 13262
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35437261817b861409343a9e51a34e88
+      internalID: -1294318654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 12564
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bc85dedc4883d2478c800467bdf2bba
+      internalID: -292403134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__11
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 12564
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb8270fe1db972947b7791ff74969cc1
+      internalID: -566262098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__12
+      rect:
+        serializedVersion: 2
+        x: 2540
+        y: 12564
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e82c79700e24af47ba5161c26228666
+      internalID: -2030380559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__13
+      rect:
+        serializedVersion: 2
+        x: 3810
+        y: 12564
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc3b62a0f3af68d4eabb4b5e0ab5b570
+      internalID: -2116180976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__14
+      rect:
+        serializedVersion: 2
+        x: 5080
+        y: 12564
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2444e6e106562ba4fb74e227a06c402a
+      internalID: -2090172317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 11866
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfebe9a12ffb00a47a365cfeb1ac6d8a
+      internalID: -1676499434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__16
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 11866
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80ce7fe44a8f0db428a7b6fe42eee3f1
+      internalID: -13723550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__17
+      rect:
+        serializedVersion: 2
+        x: 2540
+        y: 11866
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f612c32d6b27b7d46a01c47368b44702
+      internalID: 216015437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__18
+      rect:
+        serializedVersion: 2
+        x: 3810
+        y: 11866
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d43326e2935d750458123d1e6c643ee9
+      internalID: 537010135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__19
+      rect:
+        serializedVersion: 2
+        x: 5080
+        y: 11866
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21cf2ae4bba64c346baf46b7afdc398d
+      internalID: -1026055339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 11168
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2d109272316c2e40a68b385d0c54d34
+      internalID: -1891806935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__21
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 11168
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16c811defecbb3d49a56309803b54e2f
+      internalID: 1339095591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__22
+      rect:
+        serializedVersion: 2
+        x: 2540
+        y: 11168
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bf3ca3e1d176a441bb47c9f3cf7a47d
+      internalID: -1649635281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__23
+      rect:
+        serializedVersion: 2
+        x: 3810
+        y: 11168
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf354291cca7ddf48b7d994dd581b085
+      internalID: -1789668994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__24
+      rect:
+        serializedVersion: 2
+        x: 5080
+        y: 11168
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b214e4fd8d2fb284884dda928ada5d32
+      internalID: 190851087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10470
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10ca87a072871b54da680629ed83b38a
+      internalID: 1014101405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__26
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 10470
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9434d06069287074ebc9f3cf478fb2cd
+      internalID: -1569530415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__27
+      rect:
+        serializedVersion: 2
+        x: 2540
+        y: 10470
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 094948b34e9b5444e89f809fd13936ee
+      internalID: -721812289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__28
+      rect:
+        serializedVersion: 2
+        x: 3810
+        y: 10470
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca532db03302d2b4498fa8ef4ded5963
+      internalID: 1330390079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__29
+      rect:
+        serializedVersion: 2
+        x: 5080
+        y: 10470
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aa13a466f291e547a7b50c87fb30897
+      internalID: -941894002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9772
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdeccc7fdc922534b9e7513750c5350d
+      internalID: -323099784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__31
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 9772
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f09e5fc0543907c43bc0600e2ae64730
+      internalID: -475375877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__32
+      rect:
+        serializedVersion: 2
+        x: 2540
+        y: 9772
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32e99b9d4ea193e47b920f725cb6ceea
+      internalID: 416644981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__33
+      rect:
+        serializedVersion: 2
+        x: 3810
+        y: 9772
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89f497117de1a3c43abab4096ef99c57
+      internalID: -1576579482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__34
+      rect:
+        serializedVersion: 2
+        x: 5080
+        y: 9772
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 167a03699ff74754b85ca4fa08dc4c80
+      internalID: -865406781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9074
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aa3347b7746c6c46849fd0b929b9689
+      internalID: 1148990346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__36
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 9074
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f56e2c0e31e8d4e468e424b9d6b28fc0
+      internalID: -896790429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__37
+      rect:
+        serializedVersion: 2
+        x: 2540
+        y: 9074
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a54259fdf4ac0f14396dcc6e5b0a5d41
+      internalID: 1313480343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__38
+      rect:
+        serializedVersion: 2
+        x: 3810
+        y: 9074
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a90d5db02899fa14190aa355747d58f9
+      internalID: 1886561354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__39
+      rect:
+        serializedVersion: 2
+        x: 5080
+        y: 9074
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 502afd7aade852c49a617b86f556da7a
+      internalID: 983092641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8376
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15b4c87873b55144cb157d886e081932
+      internalID: -1287047840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__41
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 8376
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb339f6739be0004c8fb73c2cff3de29
+      internalID: -99756059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__42
+      rect:
+        serializedVersion: 2
+        x: 2540
+        y: 8376
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81b285b0f43379c4e824b64d3f4f0631
+      internalID: -404328398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__43
+      rect:
+        serializedVersion: 2
+        x: 3810
+        y: 8376
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b588c7254b17df64eb060672935c39cf
+      internalID: 569236708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__44
+      rect:
+        serializedVersion: 2
+        x: 5080
+        y: 8376
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 996cb7b61dbf8414f881e2c981e17431
+      internalID: -260869097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7678
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c72cabab4cd8b8b4584ce012e90ebe73
+      internalID: -840536425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__46
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 7678
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a69ca999ccdb9144a9d73bc66e207fe2
+      internalID: -566189254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__47
+      rect:
+        serializedVersion: 2
+        x: 2540
+        y: 7678
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c570cf4181c49a04fbfd1168c75010e2
+      internalID: 344059427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__48
+      rect:
+        serializedVersion: 2
+        x: 3810
+        y: 7678
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47de5d61d13b3c54995257906886316a
+      internalID: 832662282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__49
+      rect:
+        serializedVersion: 2
+        x: 5080
+        y: 7678
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b77326d860680542bd0533dcbe69af3
+      internalID: -1159982528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6980
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbbf9c1f828e4e649b22bcffb4ea4140
+      internalID: 1136101314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__51
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 6980
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f09d5257209874749b3954b7061d6a36
+      internalID: 228274308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__52
+      rect:
+        serializedVersion: 2
+        x: 2540
+        y: 6980
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80dbafab7822be543af7700c60432f68
+      internalID: 1385348614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__53
+      rect:
+        serializedVersion: 2
+        x: 3810
+        y: 6980
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67da8c242c470384c9c0626278b5d641
+      internalID: -45587241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__54
+      rect:
+        serializedVersion: 2
+        x: 5080
+        y: 6980
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca0490bd6d4882f42a364c68aacb4d58
+      internalID: 1584755306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6282
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfa358de1d020764391ff347b1c91f35
+      internalID: 108194169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__56
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 6282
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe8e5e4e531baff4eb621c55a60aab8e
+      internalID: 1158180554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__57
+      rect:
+        serializedVersion: 2
+        x: 2540
+        y: 6282
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed0d82ef085a1f44cb9c3b8175efe1bc
+      internalID: 1352080221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__58
+      rect:
+        serializedVersion: 2
+        x: 3810
+        y: 6282
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d901c8ec008930e4f8c3dc580be34d4c
+      internalID: 568775058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__59
+      rect:
+        serializedVersion: 2
+        x: 5080
+        y: 6282
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcb74446f7d234e489f457c4393f5a6b
+      internalID: -1523735209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5584
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ab2313386a55474a86551d781093925
+      internalID: -1028109801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__61
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 5584
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d576547f486573b4db2bdf7ed7130153
+      internalID: 1310231337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__62
+      rect:
+        serializedVersion: 2
+        x: 2540
+        y: 5584
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0f91989ee71b484ebe774aabae09bc1
+      internalID: -678118747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__63
+      rect:
+        serializedVersion: 2
+        x: 3810
+        y: 5584
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95564d58146e4cf49b844394ea7fada2
+      internalID: 990017607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__64
+      rect:
+        serializedVersion: 2
+        x: 5080
+        y: 5584
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 153828193e1a7d643a64eaafe7319020
+      internalID: 1639127295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4886
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 155bbce2b446db44ba95a85e114f3319
+      internalID: 548801888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__66
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 4886
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 923f8f6a58ed7224382630d3e05450cc
+      internalID: -901414983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__67
+      rect:
+        serializedVersion: 2
+        x: 2540
+        y: 4886
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68b18798c0e19ed40b7969f99156b42c
+      internalID: 1862817403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__68
+      rect:
+        serializedVersion: 2
+        x: 3810
+        y: 4886
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ec969cd832a70540bd1071a02f8f9c1
+      internalID: -1485206112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__69
+      rect:
+        serializedVersion: 2
+        x: 5080
+        y: 4886
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05f69f1d883a7e946b1c40eaba49c0a0
+      internalID: 376063773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4188
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2be21d550379324181bb019f6032b3b
+      internalID: -2124057647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__71
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 4188
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3e3c51d448b04d43b916d3396832716
+      internalID: 1104457408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__72
+      rect:
+        serializedVersion: 2
+        x: 2540
+        y: 4188
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee689bbd89fa16f4f816aeb93fc784cd
+      internalID: -1771177194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__73
+      rect:
+        serializedVersion: 2
+        x: 3810
+        y: 4188
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66c9acf638bbde14a82f9663c2e58d34
+      internalID: 1717384011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__74
+      rect:
+        serializedVersion: 2
+        x: 5080
+        y: 4188
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aef6794579961cc418577039fe25b6ca
+      internalID: 43373279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__75
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3490
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc5e1ae21ec94ad4a8ff89d4b485db47
+      internalID: -1631971737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__76
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 3490
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13e3c8902a891e74e808c1203c3c9dcc
+      internalID: -1252958854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__77
+      rect:
+        serializedVersion: 2
+        x: 2540
+        y: 3490
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0a990889cd5800419c2a45359145be0
+      internalID: 1377674758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__78
+      rect:
+        serializedVersion: 2
+        x: 3810
+        y: 3490
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1b4104a414f62f40a4713f091bb116e
+      internalID: 692745868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__79
+      rect:
+        serializedVersion: 2
+        x: 5080
+        y: 3490
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71fc7b085f4bd414cb453cbb2d9ff1cd
+      internalID: 378788320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2792
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8738b3cec20d2094a813bad3a70c90aa
+      internalID: -82160852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__81
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 2792
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05bbd72e8b351c4408bf00f83b807224
+      internalID: -463790117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__82
+      rect:
+        serializedVersion: 2
+        x: 2540
+        y: 2792
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2ac112cbb0901647bb1efc25e0b13af
+      internalID: 587227417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__83
+      rect:
+        serializedVersion: 2
+        x: 3810
+        y: 2792
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f79caaa0382e474884c75084d2c07dd
+      internalID: 284344031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__84
+      rect:
+        serializedVersion: 2
+        x: 5080
+        y: 2792
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ba28c37f00624048a215f04fc5b42c7
+      internalID: 33160016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__85
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2094
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a2a849cdfbef3648a4efa424232e03c
+      internalID: 390933174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__86
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 2094
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfbae406989c75a4c97670c1c5e5a0b4
+      internalID: 532892608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__87
+      rect:
+        serializedVersion: 2
+        x: 2540
+        y: 2094
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6cf344617fd1ba41b2f52552264852e
+      internalID: 1385554842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__88
+      rect:
+        serializedVersion: 2
+        x: 3810
+        y: 2094
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd6ce92b97d90874787c46a3af88f647
+      internalID: 820691567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__89
+      rect:
+        serializedVersion: 2
+        x: 5080
+        y: 2094
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7574e726f02d5184f8bd5aa661cf4bb8
+      internalID: 13520073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1396
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b6c92d6b241c1e449071c653ff889da
+      internalID: -1435291500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__91
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 1396
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9a2e56d981094048b29a190cf2b337b
+      internalID: -1809256674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__92
+      rect:
+        serializedVersion: 2
+        x: 2540
+        y: 1396
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 939f82ab7b782664f9834bed0e19a3ac
+      internalID: -370948911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__93
+      rect:
+        serializedVersion: 2
+        x: 3810
+        y: 1396
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b57011fc20d23e8418055741501f81ef
+      internalID: -1801625059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__94
+      rect:
+        serializedVersion: 2
+        x: 5080
+        y: 1396
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b41662df0144004f90dbcbc570e8aaa
+      internalID: 284561068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__95
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 698
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5258d75d99e64d743912731260d56031
+      internalID: -600199415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__96
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 698
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 092d714c0d032cd419dfe98f9ecfea97
+      internalID: -207387468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__97
+      rect:
+        serializedVersion: 2
+        x: 2540
+        y: 698
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c9f9920fe57d3f45896eb566c9a4be8
+      internalID: -1173212190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__98
+      rect:
+        serializedVersion: 2
+        x: 3810
+        y: 698
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdf74dc3e75a0bb4d8aac3178a027ba9
+      internalID: 2091703900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__99
+      rect:
+        serializedVersion: 2
+        x: 5080
+        y: 698
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc86e6fd7611625458aab02cf803c24b
+      internalID: -1462147304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5d4548fb4bed5a4dae597ead8a27bc6
+      internalID: 629225372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__101
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 0
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e87e2a98380905e4eb31ab6285822de0
+      internalID: -1692934373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__102
+      rect:
+        serializedVersion: 2
+        x: 2540
+        y: 0
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19d02053d0896f248b011de80b08cc09
+      internalID: -140967496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MENU_LLUVIA__103
+      rect:
+        serializedVersion: 2
+        x: 3810
+        y: 0
+        width: 1270
+        height: 698
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1762d452c1ce468408ae2ff7413b701c
+      internalID: 1953459549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 3b11d7c2da2c4a1478ccd288fbf1f1d3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":1270.0,"y":698.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      MENU_LLUVIA__0: -2705880905926536484
+      MENU_LLUVIA__1: -616602764
+      MENU_LLUVIA__10: -292403134
+      MENU_LLUVIA__100: 629225372
+      MENU_LLUVIA__101: -1692934373
+      MENU_LLUVIA__102: -140967496
+      MENU_LLUVIA__103: 1953459549
+      MENU_LLUVIA__11: -566262098
+      MENU_LLUVIA__12: -2030380559
+      MENU_LLUVIA__13: -2116180976
+      MENU_LLUVIA__14: -2090172317
+      MENU_LLUVIA__15: -1676499434
+      MENU_LLUVIA__16: -13723550
+      MENU_LLUVIA__17: 216015437
+      MENU_LLUVIA__18: 537010135
+      MENU_LLUVIA__19: -1026055339
+      MENU_LLUVIA__2: 158476612
+      MENU_LLUVIA__20: -1891806935
+      MENU_LLUVIA__21: 1339095591
+      MENU_LLUVIA__22: -1649635281
+      MENU_LLUVIA__23: -1789668994
+      MENU_LLUVIA__24: 190851087
+      MENU_LLUVIA__25: 1014101405
+      MENU_LLUVIA__26: -1569530415
+      MENU_LLUVIA__27: -721812289
+      MENU_LLUVIA__28: 1330390079
+      MENU_LLUVIA__29: -941894002
+      MENU_LLUVIA__3: -1021506828
+      MENU_LLUVIA__30: -323099784
+      MENU_LLUVIA__31: -475375877
+      MENU_LLUVIA__32: 416644981
+      MENU_LLUVIA__33: -1576579482
+      MENU_LLUVIA__34: -865406781
+      MENU_LLUVIA__35: 1148990346
+      MENU_LLUVIA__36: -896790429
+      MENU_LLUVIA__37: 1313480343
+      MENU_LLUVIA__38: 1886561354
+      MENU_LLUVIA__39: 983092641
+      MENU_LLUVIA__4: 2013981696
+      MENU_LLUVIA__40: -1287047840
+      MENU_LLUVIA__41: -99756059
+      MENU_LLUVIA__42: -404328398
+      MENU_LLUVIA__43: 569236708
+      MENU_LLUVIA__44: -260869097
+      MENU_LLUVIA__45: -840536425
+      MENU_LLUVIA__46: -566189254
+      MENU_LLUVIA__47: 344059427
+      MENU_LLUVIA__48: 832662282
+      MENU_LLUVIA__49: -1159982528
+      MENU_LLUVIA__5: -1985518644
+      MENU_LLUVIA__50: 1136101314
+      MENU_LLUVIA__51: 228274308
+      MENU_LLUVIA__52: 1385348614
+      MENU_LLUVIA__53: -45587241
+      MENU_LLUVIA__54: 1584755306
+      MENU_LLUVIA__55: 108194169
+      MENU_LLUVIA__56: 1158180554
+      MENU_LLUVIA__57: 1352080221
+      MENU_LLUVIA__58: 568775058
+      MENU_LLUVIA__59: -1523735209
+      MENU_LLUVIA__6: -1889748152
+      MENU_LLUVIA__60: -1028109801
+      MENU_LLUVIA__61: 1310231337
+      MENU_LLUVIA__62: -678118747
+      MENU_LLUVIA__63: 990017607
+      MENU_LLUVIA__64: 1639127295
+      MENU_LLUVIA__65: 548801888
+      MENU_LLUVIA__66: -901414983
+      MENU_LLUVIA__67: 1862817403
+      MENU_LLUVIA__68: -1485206112
+      MENU_LLUVIA__69: 376063773
+      MENU_LLUVIA__7: -1020146235
+      MENU_LLUVIA__70: -2124057647
+      MENU_LLUVIA__71: 1104457408
+      MENU_LLUVIA__72: -1771177194
+      MENU_LLUVIA__73: 1717384011
+      MENU_LLUVIA__74: 43373279
+      MENU_LLUVIA__75: -1631971737
+      MENU_LLUVIA__76: -1252958854
+      MENU_LLUVIA__77: 1377674758
+      MENU_LLUVIA__78: 692745868
+      MENU_LLUVIA__79: 378788320
+      MENU_LLUVIA__8: 94762337
+      MENU_LLUVIA__80: -82160852
+      MENU_LLUVIA__81: -463790117
+      MENU_LLUVIA__82: 587227417
+      MENU_LLUVIA__83: 284344031
+      MENU_LLUVIA__84: 33160016
+      MENU_LLUVIA__85: 390933174
+      MENU_LLUVIA__86: 532892608
+      MENU_LLUVIA__87: 1385554842
+      MENU_LLUVIA__88: 820691567
+      MENU_LLUVIA__89: 13520073
+      MENU_LLUVIA__9: -1294318654
+      MENU_LLUVIA__90: -1435291500
+      MENU_LLUVIA__91: -1809256674
+      MENU_LLUVIA__92: -370948911
+      MENU_LLUVIA__93: -1801625059
+      MENU_LLUVIA__94: 284561068
+      MENU_LLUVIA__95: -600199415
+      MENU_LLUVIA__96: -207387468
+      MENU_LLUVIA__97: -1173212190
+      MENU_LLUVIA__98: 2091703900
+      MENU_LLUVIA__99: -1462147304
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -16,6 +16,7 @@ public class GridGenerator : MonoBehaviour
     public Sprite buttonSprite;
 
     private GameObject robotInstance; // Para guardar una referencia al robot creado
+    public RobotController Robot { get; private set; } // Referencia pública al controlador del robot
     public LevelData levelDataForWinCheck;
 
     // Esta es la función principal que tu script Puzzle.cs llamará
@@ -56,8 +57,9 @@ public class GridGenerator : MonoBehaviour
                     // Instanciamos el robot como hijo del tile de inicio para que se posicione correctamente
                     robotInstance = Instantiate(robotPrefab, newTile.transform);
                     robotInstance.name = "Robot";
-                    RobotController robotController = robotInstance.GetComponent<RobotController>();
-                    robotController.Setup(levelData, x, y);
+                    Robot = robotInstance.GetComponent<RobotController>();
+                    // Le pasamos el 'transform' de este objeto (PuzzleArea)
+                    Robot.Setup(levelData, x, y, transform);
                 }
             }
         }
