@@ -94,4 +94,23 @@ public class Enemy : MonoBehaviour
             animator.SetFloat("LastInputY", lastMoveDirection.y);
         }
     }
+
+    // --- NUEVO: Iniciar batalla al colisionar con el jugador ---
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        // Comprobamos si el objeto con el que colisionamos tiene el componente PlayerHealth.
+        if (collision.gameObject.GetComponent<PlayerHealth>() != null)
+        {
+            // Si el BattleManager existe, le decimos que inicie la batalla.
+            if (BattleManager.Instance != null)
+            {
+                Debug.Log("Player collided with enemy. Starting battle.");
+                BattleManager.Instance.StartBattle(this);
+            }
+            else
+            {
+                Debug.LogError("BattleManager.Instance is not found in the scene!");
+            }
+        }
+    }
 }

@@ -6,6 +6,10 @@ using UnityEngine.UI;
 
 public class Item : MonoBehaviour
 {
+    [Header("Data")]
+    [Tooltip("La referencia al ScriptableObject de tipo DiceItem (si este item es un dado).")]
+    public DiceItem diceData; // --- NUEVO CAMPO ---
+
     public int ID;
     public string itemName;
     public int quantity = 1;
